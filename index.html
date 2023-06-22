@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style1.css">
+ 
+  <style>
+    body {
+      background-color:whitesmoke;
+      color:black;
+    }
+    .hero {
+    background-image: url(img/Banner/banner-1.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+   
+    
+}
+    .hero-content {
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .hero-content .btn {
+      font-size: 18px;
+      padding: 10px 30px;
+      border-radius: 30px;
+      color: white;
+      background-color: #ff9bb9;
+    }
+    
+    .about {
+        margin-top: 2em;
+    }
+
+    main {
+        margin-top: 2em;
+    }
+    .service-section {
+        margin-top: 2em;
+    }
+    .gall {
+        margin-top: 2em;
+    }
+
+    .footer {
+        margin-top: 2em;
+    }
+
+  </style>
+  <title>Flower Shop</title>
+</head>
+<body>
+  <header>
+    <!-- Navbar goes here -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top ">
+        <div class="container">
+          <a class="navbar-brand" href="#">Flower Shop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="hero-content" style="margin-top:4em;">
+              <h1>Welcome to Flower Shop</h1>
+              <p>Discover the beauty of flowers and find the perfect arrangement for any occasion.</p>
+              <a href="#" class="btn btn-primary">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="about-us">
+    <section class="about" style="background-color:whitesmoke;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="about.jpg" alt="Flower" class="img-fluid" >
+          </div>
+          <div class="col-lg-6">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque at sapien auctor rutrum. Etiam volutpat eget dui non dignissim. Donec tincidunt, dolor non lacinia efficitur, lorem velit condimentum nisl, id ultrices est eros ut lectus.</p>
+          <img src="img/about/about-2.jpg" class="img-fluid" height="250px" width="250px" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+
+    <main>
+        <section class="testimonial-slider">
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                      <div class="testimonial-item">
+                        <img src="flower-tst2.jpg" class="img-fluid" alt="" style="border-radius: 50%; border: 2px solid black; height:100px; width:100px;">
+                        <p>"I absolutely love the beautiful arrangements from Flower Shop. The flowers are always fresh and the designs are stunning!"</p>
+                        <p class="author">- Emily Smith</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                      <div class="testimonial-item">
+                        <img src="flower-tst.jpg" class="img-fluid" alt="" style="border-radius: 50%; border: 2px solid black; height:100px; width:100px;">
+                        <p>"Flower Shop has the best customer service. They helped me choose the perfect flowers for my wedding and delivered them on time. Highly recommended!"</p>
+                        <p class="author">- John Davis</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                      <div class="testimonial-item">
+                        <img src="flower1-tst.jpg" class="img-fluid" alt="" style="border-radius: 50%; border: 2px solid black; height:100px; width:100px;">
+                        <p>"I've been a loyal customer of Flower Shop for years. Their arrangements never disappoint and always bring a smile to my face."</p>
+                        <p class="author">- Sarah Johnson</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </main>
+      <div id="services">
+      <div class="service-section" style="background-color: whitesmoke;">
+        <section class="services">
+          <div class="container">
+            <div class="heading-services" style="text-align: center; margin-bottom:2em;">
+                <h2>OUR SERVICES</h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6" style="text-align: center;">
+                <div class="service-item">
+                  <img src="img/services/service-1.jpg" class="img-fluid" style="height:300px; width: 300px; border: #ff9bb9 5px solid; padding: 5px;" alt="Service 1">
+                  <h3>Wedding Arrangements</h3>
+                  <p>We provide beautiful floral arrangements for weddings, tailored to your preferences and themes.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" style="text-align: center;">
+                <div class="service-item">
+                  <img src="img/services/service-2.jpg" class="img-fluid" style="height:300px; width: 300px; border: #ff9bb9 5px solid; padding:5px;" alt="Service 2">
+                  <h3>Special Occasions</h3>
+                  <p>Make special occasions even more memorable with our stunning floral designs.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" style="text-align: center;">
+                <div class="service-item">
+                  <img src="img/services/service-3.jpg" class="img-fluid" style="height:300px; width: 300px; border: #ff9bb9 5px solid; padding: 5px;" alt="Service 3">
+                  <h3>Flower Delivery</h3>
+                  <p>Enjoy the convenience of flower delivery services for gifts, celebrations, and more.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+    </div>
+      
+       <div id="gallery">
+       <div class="gall">
+        <div class="heading-gallery" style="text-align: center; margin-bottom:2em;" >
+            <h2> Beautiful Flowers Gallery</h2>
+        </div>
+        <section class="gallery">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="gallery-item">
+                  <img src="img/gallery/gal-1.jpg" alt="Flower 1">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="gallery-item">
+                  <img src="img/gallery/gal-2.jpg" alt="Flower 2">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="gallery-item">
+                  <img src="img/gallery/gal-3.jpg" alt="Flower 3">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="gallery-item">
+                  <img src="img/gallery/gal-4.jpg" alt="Flower 4">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="gallery-item">
+                  <img src="img/gallery/gal-5.jpg" alt="Flower 5">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="gallery-item">
+                  <img src="img/gallery/gal-6.jpg" alt="Flower 5">
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+    </div>
+</div>
+    
+    <div id="contact">
+    <div class="section-contact-us">
+        <section id="contact" class="py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h2>Contact Us</h2>
+                  <p>We would love to hear from you. Fill out the form below or contact us using the information provided.</p>
+                  
+                  <form action="#" method="POST" class="mt-4">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Your Email</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="background-color: #ff9bb9;">Submit</button>
+                  </form>
+                </div>
+                
+                <div class="col-lg-6">
+                  <h2>Visit Our Shop</h2>
+                  <p>Feel free to visit our shop during business hours to explore our beautiful flower collection.</p>
+                  
+                  <address>
+                    <strong>Flower Shop</strong><br>
+                    123 Flower Street<br>
+                    City, State ZIP Code<br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                  </address>
+                  
+                  <div class="map-responsive mt-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1234567890!2d-75.1234567!3d39.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1234567890abcdef!2sFlower%20Shop!5e0!3m2!1sen!2sus!4v1234567890abcdef" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+    </div>
+    </div>
+
+    <!-- Additional sections go here -->
+
+   
+    <!-- Footer goes here -->
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="footer-column">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in turpis at sem fermentum bibendum nec ut mauris.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                  <li>Wedding Arrangements</li>
+                  <li>Special Occasions</li>
+                  <li>Flower Delivery</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-column">
+                <h4>Gallery</h4>
+                <ul>
+                  <li>Wedding Flowers</li>
+                  <li>Bouquets</li>
+                  <li>Floral Arrangements</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>123 Flower Street, City, Country</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1 123-456-7890</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
