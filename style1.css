@@ -6,7 +6,7 @@
     font-weight: bold;
   }
   li a:hover {
-    background-color: pink;
+    background-color:#9f0983;
   }
   li {
     font-size: 18px;
@@ -20,7 +20,7 @@
 
 
 .testimonial-slider {
-    background-color:palevioletred;
+    background-color:#9f0983;
     padding: 50px 0;
   }
 
@@ -38,6 +38,7 @@
 
   .testimonial-item .author {
     font-weight: bold;
+    color:white;
   }
 
   <style>
